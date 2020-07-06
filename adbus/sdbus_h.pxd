@@ -134,6 +134,7 @@ cdef extern from "systemd/sd-bus.h":
 
     int sd_bus_process(sd_bus *bus, sd_bus_message **r)
     int sd_bus_get_fd(sd_bus *bus)
+    int sd_bus_get_events(sd_bus *bus)
 
     int sd_bus_message_new_method_return(sd_bus_message *call,
             sd_bus_message **m)
